@@ -89,11 +89,8 @@ session_start();
                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600"
                required />
       </div>
-      <form action="?" method="POST">
+      
       <div class="g-recaptcha" data-sitekey="6LdcaCYrAAAAAEkD_wjRKa5ByqJ0m2asI4fnE43m"></div>
-      <br/>
-      <input type="submit" value="">
-    </form>
 
       <button type="submit" name="signUp"
               class="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">

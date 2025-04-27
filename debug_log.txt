@@ -1,0 +1,5 @@
+[2025-04-27 16:46:12] Session data: {"user_id":8,"email":"asxc@gmail.com","name":"eqwd azc"}
+[2025-04-27 16:46:12] Raw input: {"resource_id":5,"action":"borrow"}
+[2025-04-27 16:46:12] User ID: 8
+[2025-04-27 16:46:12] Parsed data: {"resource_id":5,"action":"borrow"}
+[2025-04-27 16:46:12] Action: borrow, Resource ID: 5
