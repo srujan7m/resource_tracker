@@ -51,10 +51,7 @@ if(isset($_SESSION['user_id'])) {
   <div class="w-full max-w-md p-8 bg-white dark:bg-gray-700 rounded-lg shadow-md" id="signIn">
     <div class="flex justify-between items-center mb-6">
       <h1 class="text-2xl font-bold text-orange-600">Sign In</h1>
-      <button id="theme-toggle" class="bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-white px-3 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 focus:outline-none">
-        <i class="fas fa-sun dark:hidden"></i>
-        <i class="fas fa-moon hidden dark:inline"></i>
-      </button>
+      
     </div>
     
     <?php if(isset($_SESSION['login_error'])): ?>

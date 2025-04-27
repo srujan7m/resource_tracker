@@ -8,6 +8,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -47,10 +48,7 @@ session_start();
   <div class="w-full max-w-md p-8 bg-white dark:bg-gray-700 rounded-lg shadow-md" id="signup">
     <div class="flex justify-between items-center mb-6">
       <h1 class="text-2xl font-bold text-orange-600">Register</h1>
-      <button id="theme-toggle" class="bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-white px-3 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 focus:outline-none">
-        <i class="fas fa-sun dark:hidden"></i>
-        <i class="fas fa-moon hidden dark:inline"></i>
-      </button>
+      
     </div>
     
     <?php if(isset($_SESSION['signup_error'])): ?>
@@ -91,6 +89,11 @@ session_start();
                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600"
                required />
       </div>
+      <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LdcaCYrAAAAAEkD_wjRKa5ByqJ0m2asI4fnE43m"></div>
+      <br/>
+      <input type="submit" value="">
+    </form>
 
       <button type="submit" name="signUp"
               class="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
